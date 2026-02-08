@@ -12,6 +12,7 @@ import com.example.kotlinreflectrepro.ui.theme.KotlinReflectReproTheme
 fun GreetingPreview() {
     KotlinReflectReproTheme {
         Surface {
+            throw RuntimeException("example exception")
             Greeting("Android")
         }
     }
